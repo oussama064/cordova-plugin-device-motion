@@ -146,13 +146,6 @@ accelerometer.
 
     var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 
-### iOS Quirks
-
-The API calls the success callback function at the interval requested,
-but restricts the range of requests to the device between 40ms and
-1000ms. For example, if you request an interval of 3 seconds,
-(3000ms), the API requests data from the device every 1 second, but
-only executes the success callback every 3 seconds.
 
 ## navigator.accelerometer.clearWatch
 
